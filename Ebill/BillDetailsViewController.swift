@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TotalBillViewController: UIViewController {
+class TotalBillViewController: UIViewController
+{
+    var electricityBill: ElectricityBill?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,24 @@ class TotalBillViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    private func calculateTotalBillAmount(){
+        var totalBill =  0.0
+        if (electricityBill?.unitsConsumed)! <= 100 {
+            
+            totalBill = Double((electricityBill?.unitsConsumed)!) * 0.75
+        }
+        else if ((electricityBill?.unitsConsumed)!) <= 250{
+            totalBill = 75 + (Double((electricityBill?.unitsConsumed)!) - 100) * 1.25
+            
+        }
+        else if (electricityBill?.unitsConsumed)! <= 450
+        {
+            totalBill = 262.5 + Double((electricityBill?.unitsConsumed)!) * 2.25
+        }
+        print(totalBill)
+    }
+}
+
 
     /*
     // MARK: - Navigation

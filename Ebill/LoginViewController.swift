@@ -10,6 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var RememberMe: UILabel!
+    @IBAction func rememberSwitch(_ sender: UISwitch)
+    {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +28,20 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func `switch`(_ sender: Any) {
+    }
+    @IBAction func btnlogin(_ sender: UIButton) {
+        if (txtUsername.text == "admin@gmail.com" && txtPassword.text == "secret")
+        {
+            performSegue(withIdentifier: "ToElectricity", sender: self)
+            print("Valid")
+        }
+        else
+        {
+            print("INVALID UserID or Password")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +51,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

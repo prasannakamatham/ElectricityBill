@@ -9,7 +9,17 @@
 import UIKit
 
 class ElectricityViewController: UIViewController {
+    
+    var electricityBill: ElectricityBill?
 
+    @IBOutlet weak var txtCustID: UITextField!
+    @IBOutlet weak var txtCustName: UITextField!
+    @IBOutlet weak var txtCustEmail: UITextField!
+    @IBOutlet weak var txtGender: UITextField!
+    @IBOutlet weak var Gender: UITextField!
+    @IBOutlet weak var txtUnitsConsumed: UITextField!
+    @IBOutlet weak var Date: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +31,14 @@ class ElectricityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func TotalBill(_ sender: UIButton)
+    {
+        electricityBill = ElectricityBill(customerId: Int(txtCustID.text!), customerName: txtCustName.text!, gender: Gender.Male, billDate:Date(), unitsConsumed: Int(txtUnitsConsumed.text!), totalBillAmount: 0)
+        performSegue(withIdentifier: "ToBillDetails", sender: self)
+    }
+    
+    @IBAction func btnLogout(_ sender: UIBarButtonItem) {
+    }
     /*
     // MARK: - Navigation
 

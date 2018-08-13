@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		9B32584C211CCA45002CB98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B32584B211CCA45002CB98C /* AppDelegate.swift */; };
-		9B32584E211CCA45002CB98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B32584D211CCA45002CB98C /* ViewController.swift */; };
+		9B32584E211CCA45002CB98C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B32584D211CCA45002CB98C /* SplashViewController.swift */; };
 		9B325851211CCA45002CB98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B32584F211CCA45002CB98C /* Main.storyboard */; };
 		9B325853211CCA45002CB98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B325852211CCA45002CB98C /* Assets.xcassets */; };
 		9B325856211CCA45002CB98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B325854211CCA45002CB98C /* LaunchScreen.storyboard */; };
+		9B32585E211CCA86002CB98C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B32585D211CCA86002CB98C /* LoginViewController.swift */; };
+		9B325860211CCB25002CB98C /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B32585F211CCB25002CB98C /* ElectricityViewController.swift */; };
+		9B325862211CCB47002CB98C /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B325861211CCB47002CB98C /* BillDetailsViewController.swift */; };
+		9B9EC2792122198000A304BD /* ElectricityBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EC2782122198000A304BD /* ElectricityBill.swift */; };
+		9BE64382211CE7EB00E27C58 /* Ebill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE64381211CE7EB00E27C58 /* Ebill.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B325848211CCA45002CB98C /* Ebill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ebill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B32584B211CCA45002CB98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B32584D211CCA45002CB98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B32584D211CCA45002CB98C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9B325850211CCA45002CB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B325852211CCA45002CB98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B325855211CCA45002CB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B325857211CCA45002CB98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B32585D211CCA86002CB98C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B32585F211CCB25002CB98C /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
+		9B325861211CCB47002CB98C /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		9B9EC2782122198000A304BD /* ElectricityBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityBill.swift; sourceTree = "<group>"; };
+		9BE64381211CE7EB00E27C58 /* Ebill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ebill.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		9B32584A211CCA45002CB98C /* Ebill */ = {
 			isa = PBXGroup;
 			children = (
+				9BE64381211CE7EB00E27C58 /* Ebill.png */,
 				9B32584B211CCA45002CB98C /* AppDelegate.swift */,
-				9B32584D211CCA45002CB98C /* ViewController.swift */,
+				9B32584D211CCA45002CB98C /* SplashViewController.swift */,
 				9B32584F211CCA45002CB98C /* Main.storyboard */,
 				9B325852211CCA45002CB98C /* Assets.xcassets */,
 				9B325854211CCA45002CB98C /* LaunchScreen.storyboard */,
 				9B325857211CCA45002CB98C /* Info.plist */,
+				9B32585D211CCA86002CB98C /* LoginViewController.swift */,
+				9B32585F211CCB25002CB98C /* ElectricityViewController.swift */,
+				9B325861211CCB47002CB98C /* BillDetailsViewController.swift */,
+				9B9EC2782122198000A304BD /* ElectricityBill.swift */,
 			);
 			path = Ebill;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE64382211CE7EB00E27C58 /* Ebill.png in Resources */,
 				9B325856211CCA45002CB98C /* LaunchScreen.storyboard in Resources */,
 				9B325853211CCA45002CB98C /* Assets.xcassets in Resources */,
 				9B325851211CCA45002CB98C /* Main.storyboard in Resources */,
@@ -135,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B32584E211CCA45002CB98C /* ViewController.swift in Sources */,
+				9B9EC2792122198000A304BD /* ElectricityBill.swift in Sources */,
+				9B32585E211CCA86002CB98C /* LoginViewController.swift in Sources */,
+				9B32584E211CCA45002CB98C /* SplashViewController.swift in Sources */,
+				9B325860211CCB25002CB98C /* ElectricityViewController.swift in Sources */,
+				9B325862211CCB47002CB98C /* BillDetailsViewController.swift in Sources */,
 				9B32584C211CCA45002CB98C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
